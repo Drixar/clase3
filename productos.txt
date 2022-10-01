@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Calculadora",
+    "price": "$ 150",
+    "thumbnail": "./images/calculadora.png"
+  },
+  {
+    "id": 3,
+    "title": "Tablet",
+    "price": "$ 400",
+    "thumbnail": "./images/tablet.png"
+  },
+  {
+    "id": 4,
+    "title": "Mouse",
+    "price": "$ 80",
+    "thumbnail": "./images/mouse.png"
+  }
+]
