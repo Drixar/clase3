@@ -25,7 +25,7 @@ app.get('/', (_req, res) => {
  app.get('/productoRandom', async (_req, res) => {
     const lista = await listaProductos.getAll();
     if (lista) {
-    const idRandom = Math.floor(Math.random()*JSON.parse(lista).length)
-    const productoRandom = await listaProductos.getById(JSON.parse(lista)[idRandom].id)
+    const idRandom = Math.floor(Math.random()*lista.length)
+    const productoRandom = await listaProductos.getById(lista[idRandom].id)
     res.send({productoRandom})}
  })

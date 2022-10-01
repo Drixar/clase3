@@ -85,7 +85,7 @@ export class Contenedor {
           const productos: ProductToAdd[] = JSON.parse(contenido);
           const producto = productos.find((item) => item.id === id);
           if (producto) {
-            return JSON.stringify(producto);
+            return producto;
           } else {
             return "Elemento no encontrado";
           }
@@ -102,7 +102,7 @@ export class Contenedor {
     try {
       const contenido = await fs.promises.readFile(this.fileName, "utf8");
       const productos = JSON.parse(contenido);
-      return JSON.stringify(productos);
+      return productos;
     } catch (error) {
       console.log(error);
     }
